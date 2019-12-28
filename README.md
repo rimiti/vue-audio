@@ -4,7 +4,7 @@
 ## Description
 
 Audio recorder for Vue.js. It allows to create, play, download and store records on a server.
-Fork of [vue-audio](https://github.com/rimiti/vue-audio)
+
 
 ### Features
 
