@@ -3,7 +3,7 @@
 </style>
 
 <template>
-  <div class="ar-player">
+  <div class="ar-player-basic">
     <div class="ar-player-actions">
       <icon-button
         id="play"
