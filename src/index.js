@@ -1,6 +1,7 @@
-import AudioPlayerBasic from '@/components/player-basic.vue'
-import AudioPlayer from '@/components/player.vue'
-import AudioRecorder from '@/components/recorder.vue'
+import AudioPlayerButton from '@/components/player-button.vue';
+import AudioPlayerBasic from '@/components/player-basic.vue';
+import AudioPlayer from '@/components/player.vue';
+import AudioRecorder from '@/components/recorder.vue';
 
 const components = {
   AudioPlayer,
@@ -11,15 +12,16 @@ const components = {
       return
     }
 
-    this.installed = true
+    this.installed = true;
 
-    Vue.prototype.$eventBus = Vue.prototype.$eventBus || new Vue
+    Vue.prototype.$eventBus = Vue.prototype.$eventBus || new Vue;
 
-    Vue.component('audio-player-basic', AudioPlayerBasic)
-    Vue.component('audio-player', AudioPlayer)
-    Vue.component('audio-recorder', AudioRecorder)
+    Vue.component('audio-player-button', AudioPlayerButton);
+    Vue.component('audio-player-basic', AudioPlayerBasic);
+    Vue.component('audio-player', AudioPlayer);
+    Vue.component('audio-recorder', AudioRecorder);
   }
-}
+};
 
 export default components
 
